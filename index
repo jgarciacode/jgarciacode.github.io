@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JGarciaCode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0f0f0f, #050505);
+      color: #e0f7fa;
+    }
+    .neon-soft {
+      color: #e0f7fa;
+      text-shadow: 0 0 3px rgba(0, 255, 231, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="p-6 bg-black bg-opacity-50 flex justify-between items-center border-b border-cyan-400">
+    <h1 class="text-2xl neon-soft">JGarciaCode</h1>
+    <nav class="space-x-4">
+      <a href="#proyectos" class="hover:underline text-cyan-300">Proyectos</a>
+      <a href="#contacto" class="hover:underline text-cyan-300">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4">
+    <h2 class="text-4xl md:text-6xl font-bold neon-soft">Hola, soy Josué</h2>
+    <p class="mt-4 text-lg md:text-2xl text-cyan-200">Programador y creador de experiencias digitales. Este es mi hangar de proyectos 🚀</p>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="px-6 py-10">
+    <h3 class="text-3xl mb-8 neon-soft text-center">Proyectos</h3>
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Proyecto 1 -->
+      <div class="bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Nombre del Proyecto 1</h4>
+        <p class="mb-4 text-cyan-200">Descripción breve del proyecto.</p>
+        <a href="https://enlace-al-proyecto1.com" target="_blank" class="text-cyan-300 hover:underline">Ver Proyecto</a>
+      </div>
+      <!-- Puedes duplicar este bloque para más proyectos -->
+    </div>
+  </section>
+
+  <!-- Contacto / Footer -->
+  <footer id="contacto" class="mt-auto bg-black bg-opacity-50 text-center p-6 border-t border-cyan-400">
+    <p class="text-cyan-300">¿Quieres hablar? Escríbeme a <a href="mailto:tuemail@ejemplo.com" class="underline">tuemail@ejemplo.com</a></p>
+    <div class="mt-2">
+      <a href="#" class="mx-2 text-cyan-300 hover:underline">LinkedIn</a>
+      <a href="#" class="mx-2 text-cyan-300 hover:underline">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
