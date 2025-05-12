@@ -7,14 +7,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
   <style>
+
     body {
       font-family: "Share Tech", sans-serif;
       background: radial-gradient(circle at center, #0f0f0f, #050505);
       color: #e0f7fa;
     }
+
     .neon-soft {
       color: #e0f7fa;
       text-shadow: 0 0 3px rgba(0, 255, 231, 0.3);
+    }
+
+    /* Añadimos el efecto que tendran los divs al pasar el cursor */
+    .proyect:hover {
+     animation: pulse 1.5s ease infinite;
     }
 
     /* Reproductor de música como barra */
@@ -34,6 +41,8 @@
 
   </style>
 </head>
+<!-- Añadimos el efecto que tendran los divs al pasar el cursor -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <body class="min-h-screen flex flex-col">
   <!-- Header -->
   <header class="p-6 bg-black bg-opacity-50 flex justify-between items-center border-b border-cyan-400">
