@@ -59,6 +59,7 @@
       <div class="text-center mt-8">
         <a href="proyects.html">
           <button
+            id="ver-proyectos"
             class="titulo bg-[#BA2C73] hover:bg-[#a12562] text-2xl font-bold py-4 px-8 rounded-full border border-[#BA2C73] shadow-lg transition duration-300">
             Ver Proyectos
           </button>
@@ -80,6 +81,15 @@
     </div>
   </footer>
 
+  <script>
+    document.getElementById("ver-proyectos").addEventListener("click", function () {
+      gtag('event', 'click_ver_proyectos', {
+        'event_category': 'interacción',
+        'event_label': 'Botón Ver Proyectos'
+      });
+    });
+
+  </script>
 </body>
 
 </html>
