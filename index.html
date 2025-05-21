@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +8,31 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="/styles.css">
 
-<style>
-  /* Estilos generales */
-</style>
+  <style>
+    /* Estilos generales */
+  </style>
 
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-303LGGVQJ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-303LGGVQJ4');
+</script>
+
 <body class="min-h-screen flex flex-col">
+
   <!-- Header -->
   <header class="p-6 bg-[#0e101b] flex justify-between items-center">
     <h1 class="text-2xl contenido">JGarciaCode</h1>
@@ -26,39 +41,46 @@
     </nav>
   </header>
 
-    <!-- Reproductor de música -->
-    <section class="music-bar">
-      <audio controls>
-        <source src="https://github.com/jgarciacode/jgarciacode.github.io/raw/main/assets/audio/myMusic.mp3" type="audio/mp3">
-      </audio>
-    </section>
+  <!-- Reproductor de música -->
+  <section class="music-bar">
+    <audio controls>
+      <source src="https://github.com/jgarciacode/jgarciacode.github.io/raw/main/assets/audio/myMusic.mp3"
+        type="audio/mp3">
+    </audio>
+  </section>
 
   <!-- Hero Section -->
   <div class="flex-1 flex flex-col justify-center items-center">
     <section class="text-center py-20 px-4">
       <h2 class="text-4xl md:text-6xl titulo">Hola, soy Josué </h2>
-      <p class="mt-4 text-lg md:text-2xl contenido">Programador y creador de experiencias digitales. Este es mi hangar de proyectos 🚀</p>
-  <!-- Boton para acceder a los proyectos -->
-    <div class="text-center mt-8">
-    <a href="proyects.html">
-    <button class="titulo bg-[#BA2C73] hover:bg-[#a12562] text-2xl font-bold py-4 px-8 rounded-full border border-[#BA2C73] shadow-lg transition duration-300">
-      Ver Proyectos
-    </button>
-    </a>
-  </div>
+      <p class="mt-4 text-lg md:text-2xl contenido">Programador y creador de experiencias digitales. Este es mi hangar
+        de proyectos 🚀</p>
 
-  </section>
+      <!-- Boton para acceder a los proyectos -->
+      <div class="text-center mt-8">
+        <a href="proyects.html">
+          <button
+            class="titulo bg-[#BA2C73] hover:bg-[#a12562] text-2xl font-bold py-4 px-8 rounded-full border border-[#BA2C73] shadow-lg transition duration-300">
+            Ver Proyectos
+          </button>
+        </a>
+      </div>
+
+    </section>
   </div>
 
 
   <!-- Contacto / Footer -->
   <footer id="contacto" class="mt-auto bg-[#0e101b] text-center p-6 ">
-      <div class="flex justify-center space-x-4 mt-4">
-        <img src="https://github-readme-stats.vercel.app/api?username=jgarciacode&show_icons=true&theme=tokyonight"/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jgarciacode&layout=compact&theme=tokyonight" class="h-full"/>
-      </div>
+    <div class="flex justify-center space-x-4 mt-4">
+      <img src="https://github-readme-stats.vercel.app/api?username=jgarciacode&show_icons=true&theme=tokyonight" />
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=jgarciacode&layout=compact&theme=tokyonight"
+        class="h-full" />
+    </div>
     </div>
   </footer>
 
 </body>
+
 </html>
