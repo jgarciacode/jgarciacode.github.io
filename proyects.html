@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
 
+  <!-- Añadimos el efecto que tendran los divs al pasar el cursor -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <style>
 
     body {
@@ -17,7 +20,7 @@
     color: #f0f0f0;
     }
 
-    .titulo {
+    .titulo{
     color: #fbffd4;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -29,8 +32,9 @@
     font-weight: 300;
     }
 
+
     /* Añadimos el efecto que tendran los divs al pasar el cursor */
-    .proyect:hover {
+    .proyect:hover img{
     animation: pulse 1.5s ease infinite;
     }
 
@@ -51,45 +55,45 @@
 
   </style>
 </head>
-<!-- Añadimos el efecto que tendran los divs al pasar el cursor -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <body class="min-h-screen flex flex-col">
   <!-- Header -->
   <header class="p-6 bg-black bg-opacity-50 flex justify-between items-center border-b border-cyan-400">
-    <h1 class="text-2xl contenido">Mis Proyectos</h1>
+    <h1 class="text-2xl titulo">Mis Proyectos</h1>
     <nav class="space-x-4">
-      <a href="index.html" class="hover:underline contenido">Inicio</a>
-      <a href="#contacto" class="hover:underline contenido">Contacto</a>
+      <a href="index.html" class="contenido hover:underline">Inicio</a>
+      <a href="#contacto" class="contenido hover:underline">Contacto</a>
     </nav>
   </header>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="px-6 py-10 contenido">
-    <h3 class="text-3xl mb-8 titulo text-center"></h3>
+  <section id="proyectos" class="px-6 py-10">
+    <h3 class="titulo text-3xl mb-8 text-center">Proyectos realizados con HTML, CSS, JavaScript</h3>
     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
       <!-- Proyecto 1 -->
       <a href="https://jgarciacode.github.io/carrito-compras/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Carrito de Compras</h4>
-        <p class="mb-4 text-cyan-200">Primer proyecto donde desarrollamos un carrito de compras</p>
-        <img src="/assets/img/proyects/1.png" alt="Carrito de Compras" class="w-full h-auto rounded-lg mt-4">
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo">Carrito de Compras</h4>
+        <p class="contenido mb-4 text-cyan-200">Primer proyecto donde desarrollamos un carrito de compras</p>
+        <img src="/assets/img/proyects/1.png" alt="Carrito de Compras" class="w-full h-auto rounded-lg mt-4 proyect:hover">
       </div>
       </a>
 
       <!-- Proyecto 2 -->
       <a href="https://jgarciacode.github.io/envio-mails/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Envio de eMails</h4>
-        <p class="mb-4 text-cyan-200">Segundo proyecto donde simulamos una interfaz de envio de mails</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Envio de eMails</h4>
+        <p class="contenido mb-4 text-cyan-200">Segundo proyecto donde simulamos una interfaz de envio de mails</p>
         <img src="/assets/img/proyects/2.png" alt="Envio de eMails" class="w-full h-auto rounded-lg mt-4">
       </div>
       </a>
 
       <!-- Proyecto 3 -->
       <a href="https://jgarciacode.github.io/buscador-coches/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Buscador de Coches</h4>
-        <p class="mb-4 text-cyan-200">Tercer proyecto donde simulamos un buscador de marcas de coches</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Buscador de Coches</h4>
+        <p class="contenido mb-4 text-cyan-200">Tercer proyecto donde simulamos un buscador de marcas de coches</p>
         <img src="/assets/img/proyects/3.png" alt="Buscador de Coches" class="w-full h-auto rounded-lg mt-4">
 
       </div>
@@ -97,18 +101,18 @@
 
       <!-- Proyecto 4 -->
       <a href="https://jgarciacode.github.io/simulador-tweets/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Simulador de Tweets</h4>
-        <p class="mb-4 text-cyan-200">Cuarto proyecto donde creamos un simulador de Tweets a partir de Local Storage</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Simulador de Tweets</h4>
+        <p class="contenido mb-4 text-cyan-200">Cuarto proyecto donde creamos un simulador de Tweets a partir de Local Storage</p>
         <img src="/assets/img/proyects/4.png" alt="Simulador de Tweets" class="w-full h-auto rounded-lg mt-4">
       </div>
       </a>
 
       <!-- Proyecto 5 -->
       <a href="https://jgarciacode.github.io/cotizador-seguros-prototypes/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Cotizador de Seguros</h4>
-        <p class="mb-4 text-cyan-200">Quinto proyecto donde desarrollamos un cotizador de seguros con Prototypes</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Cotizador de Seguros</h4>
+        <p class="contenido mb-4 text-cyan-200">Quinto proyecto donde desarrollamos un cotizador de seguros con Prototypes</p>
         <img src="/assets/img/proyects/5.png" alt="Cotizador de Seguros" class="w-full h-auto rounded-lg mt-4">
       </div>
       </a>
@@ -116,18 +120,18 @@
 
       <!-- Proyecto 6 -->
       <a href="https://jgarciacode.github.io/calculadora-presupuesto/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Calculadora de Presupuestos</h4>
-        <p class="mb-4 text-cyan-200">Sexto proyecto donde elaboramos una calculadora de presupuesto usando clases</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Calculadora de Presupuestos</h4>
+        <p class="contenido mb-4 text-cyan-200">Sexto proyecto donde elaboramos una calculadora de presupuesto usando clases</p>
         <img src="/assets/img/proyects/6.png" alt="Calculadora de Presupuestos" class="w-full h-auto rounded-lg mt-4">
       </div>
       </a>
 
       <!-- Proyecto 7 -->
       <a href="https://jgarciacode.github.io/gestor-visitas-clinica/" target="_blank" class="block">
-      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
-        <h4 class="text-xl neon-soft mb-2">Gestor de Visitas</h4>
-        <p class="mb-4 text-cyan-200">Séptimo proyecto donde creamos un gestor de registro de pacientes</p>
+      <div class="proyect animate__animated bg-transparent p-6 rounded-xl shadow-lg">
+        <h4 class="titulo text-xl neon-soft mb-2">Gestor de Visitas</h4>
+        <p class="contenido mb-4 text-cyan-200">Séptimo proyecto donde creamos un gestor de registro de pacientes</p>
         <img src="/assets/img/proyects/7.png" alt="Gestor de Visitas" class="w-full h-auto rounded-lg mt-4">
       </div>
       </a>
