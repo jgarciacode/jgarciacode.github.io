@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Proyectos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+<style>
+
+    body {
+    font-family: "Share Tech", sans-serif;
+    background: radial-gradient(circle at center, #191D32, #011141);
+    color: #f0f0f0;
+    }
+
+    .titulo {
+    color: #fbffd4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    }
+
+    .contenido {
+    color: #fbffd4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    }
+
+    /* Añadimos el efecto que tendran los divs al pasar el cursor */
+    .proyect:hover {
+    animation: pulse 1.5s ease infinite;
+    }
+
+    /* Reproductor de música como barra */
+    .music-bar {
+      width: 100%;
+      background-color: #00000000;
+      padding: 10px 0;
+      text-align: center;
+    }
+    audio {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #0f0f0f;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<!-- Añadimos el efecto que tendran los divs al pasar el cursor -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="p-6 bg-black bg-opacity-50 flex justify-between items-center border-b border-cyan-400">
+    <h1 class="text-2xl contenido">Mis Proyectos</h1>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:underline contenido">Inicio</a>
+      <a href="#contacto" class="hover:underline contenido">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="px-6 py-10 contenido">
+    <h3 class="text-3xl mb-8 titulo text-center"></h3>
+    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Proyecto 1 -->
+      <a href="https://jgarciacode.github.io/carrito-compras/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Carrito de Compras</h4>
+        <p class="mb-4 text-cyan-200">Primer proyecto donde desarrollamos un carrito de compras</p>
+        <img src="/assets/img/proyects/1.png" alt="Carrito de Compras" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+
+      <!-- Proyecto 2 -->
+      <a href="https://jgarciacode.github.io/envio-mails/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Envio de eMails</h4>
+        <p class="mb-4 text-cyan-200">Segundo proyecto donde simulamos una interfaz de envio de mails</p>
+        <img src="/assets/img/proyects/2.png" alt="Envio de eMails" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+
+      <!-- Proyecto 3 -->
+      <a href="https://jgarciacode.github.io/buscador-coches/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Buscador de Coches</h4>
+        <p class="mb-4 text-cyan-200">Tercer proyecto donde simulamos un buscador de marcas de coches</p>
+        <img src="/assets/img/proyects/3.png" alt="Buscador de Coches" class="w-full h-auto rounded-lg mt-4">
+
+      </div>
+      </a>
+
+      <!-- Proyecto 4 -->
+      <a href="https://jgarciacode.github.io/simulador-tweets/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Simulador de Tweets</h4>
+        <p class="mb-4 text-cyan-200">Cuarto proyecto donde creamos un simulador de Tweets a partir de Local Storage</p>
+        <img src="/assets/img/proyects/4.png" alt="Simulador de Tweets" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+
+      <!-- Proyecto 5 -->
+      <a href="https://jgarciacode.github.io/cotizador-seguros-prototypes/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Cotizador de Seguros</h4>
+        <p class="mb-4 text-cyan-200">Quinto proyecto donde desarrollamos un cotizador de seguros con Prototypes</p>
+        <img src="/assets/img/proyects/5.png" alt="Cotizador de Seguros" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+      
+
+      <!-- Proyecto 6 -->
+      <a href="https://jgarciacode.github.io/calculadora-presupuesto/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Calculadora de Presupuestos</h4>
+        <p class="mb-4 text-cyan-200">Sexto proyecto donde elaboramos una calculadora de presupuesto usando clases</p>
+        <img src="/assets/img/proyects/6.png" alt="Calculadora de Presupuestos" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+
+      <!-- Proyecto 7 -->
+      <a href="https://jgarciacode.github.io/gestor-visitas-clinica/" target="_blank" class="block">
+      <div class="proyect animate__animated bg-black bg-opacity-30 border border-cyan-500 p-6 rounded-xl shadow-lg hover:shadow-cyan-400 transition">
+        <h4 class="text-xl neon-soft mb-2">Gestor de Visitas</h4>
+        <p class="mb-4 text-cyan-200">Séptimo proyecto donde creamos un gestor de registro de pacientes</p>
+        <img src="/assets/img/proyects/7.png" alt="Gestor de Visitas" class="w-full h-auto rounded-lg mt-4">
+      </div>
+      </a>
+    </div>
+
+    </div>
+
+    <!-- Boton para acceder a los proyectos -->
+    <div class="text-center mt-8">
+    <a href="index.html">
+    <button class="titulo bg-[#BA2C73] hover:bg-[#a12562] text-2xl font-bold py-4 px-8 rounded-full border border-[#BA2C73] shadow-lg transition duration-300">
+    Volver a Inicio
+    </button>
+    </a>
+</div>
+  </section>
+
+  
+
+  <!-- Contacto / Footer -->
+  <footer id="contacto" class="mt-auto bg-black bg-opacity-50 text-center p-6 border-t border-cyan-400">
+      <div class="flex justify-center space-x-4 mt-4">
+        <img src="https://github-readme-stats.vercel.app/api?username=jgarciacode&show_icons=true&theme=tokyonight"/>
+        
+        
+          <div class="bg-[#1a1b27] border border-white p-4 rounded-xl shadow-lg">
+          <p class="text-[#6695e4] text-center font-bold text-xl">Encuentrame en GitHub</p>
+          <a href="https://github.com/jgarciacode" class="block text-center text-cyan-300 hover:underline"></a>
+          <a href="https://github.com/jgarciacode" target="_blank" class="flex justify-center items-center w-full h-75">
+            <img src="assets/img/icons/github.png" alt="GitHub Logo" class="w-16 h-16 mt-2">
+          </a>
+        </div>
+
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jgarciacode&layout=compact&theme=tokyonight" class="h-full"/>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
